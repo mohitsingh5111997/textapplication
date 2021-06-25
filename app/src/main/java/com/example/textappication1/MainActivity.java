@@ -1,0 +1,27 @@
+package com.example.textappication1;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    public void background(View view) {
+        Intent intent = new Intent(this,Background.class);
+        startActivity(intent);
+    }
+
+    public void background2(View view) {
+        Intent intent = new Intent(this,Background2.class);
+        startActivity(intent);
+    }
+}
